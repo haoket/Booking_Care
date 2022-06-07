@@ -11,6 +11,19 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+    return queryInterface.bulkInsert('Users',[{
+      email: 'admin@gmail.com',
+      password: '123456',
+      firstName: 'Hao',
+      lastName: 'Ket',
+      address: 'Hue',
+      gender: 1,
+      typeRole: 'ROLE',
+      keyRole:'R1'
+    }])
+
+
+
   },
 
   down: async (queryInterface, Sequelize) => {
