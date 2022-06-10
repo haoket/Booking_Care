@@ -10,10 +10,8 @@ let router = express.Router();
 
 let initWebRoutes = (app) => {
     router.get('/', homeController.getHomePage);
-    router.get('/kethao', (req, res)=> {
-        return res.send("Hello Word with KetHao1")
-    });
-
+    router.get('/crud', homeController.getCRUD);
+    router.post('/post-crud', homeController.postCRUD);
 
 
 
